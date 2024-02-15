@@ -12,24 +12,18 @@
 }
 
 .info-container {
-    padding: 5px;
+    margin: 5px;
+    border-bottom: 1px solid #333357;
+    border-left: 1px solid #333357;
+    border-right: 1px solid #333357;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    border: 1px solid #333357;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 10px;
-}
-
-legend {
-    font-size: large;
-    font-weight: bold;
-    color: #1b6c65;
-    text-align: center;
+    padding: 15px;
 }
 
 form input {
@@ -60,3 +54,39 @@ button {
     border-radius: 20px;
     padding: 15px;
 }
+
+/**/
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+.collapsible:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+}
+
+/**/
+/**/
