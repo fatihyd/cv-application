@@ -1,13 +1,26 @@
 import React from 'react'
 
-export default function ContactInfo() {
+export default function ContactInfo(props) {
+    function handleSubmit(event) {
+        event.preventDefault();
+
+        console.log("submitted");
+    }
+
+    function handleChange(event) {
+        props.setFormData(prevFormData => ({
+            ...prevFormData,
+            [event.target.name]: event.target.value
+        }));
+    }
+
     return (
         <div className='info-container'>
-            <h2>Contact Info</h2>
-            <form action="">
-                <input type="text" placeholder='Name' />
-                <input type="text" placeholder='Email' />
-                <input type="tel" placeholder='Phone Number' />
+            <form onSubmit={handleSubmit}>
+                <legend>Contact Info</legend>
+                <input type="text" placeholder='Name' name="name" value={props.formData.name} onChange={handleChange} />
+                <input type="text" placeholder='Email' name="email" value={props.formData.email} onChange={handleChange} />
+                <input type="tel" placeholder='Phone Number' name="phoneNumber" value={props.formData.phoneNumber} onChange={handleChange} />
                 <button>Submit Contact Info</button>
             </form>
         </div>
