@@ -1,0 +1,39 @@
+#root {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container {
+    padding: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin: 5px;
+}
+
+textarea {
+    margin: 5px;
+}
+
+button {
+    margin-top: 5px;
+}
+
+/**/
+#cv {
+    background-color: white;
+    color: black;
+}
