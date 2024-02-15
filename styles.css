@@ -54,3 +54,9 @@ button {
     justify-content: center;
     align-items: center;
 }
+
+.cv-info {
+    border-bottom: 1px dashed black;
+    border-radius: 20px;
+    padding: 15px;
+}

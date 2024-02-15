@@ -3,26 +3,27 @@ import React from "react"
 export default function CV(props) {
     return (
         <>
-            <div>
+            <h1>My CV</h1>
+            <div className="cv-info">
                 <h2>Contact Information</h2>
-                <p>Name: {props.name}</p>
-                <p>Email: {props.email}</p>
-                <p>Phone Number: {props.phoneNumber}</p>
+                <p><strong>Name:</strong> {props.name}</p>
+                <p><strong>Email:</strong> {props.email}</p>
+                <p><strong>Phone Number:</strong> {props.phoneNumber}</p>
             </div>
-            <div>
+            <div className="cv-info">
                 <h2>Education Information</h2>
-                <p>School: {props.school}</p>
-                <p>Title of Study: {props.titleOfStudy}</p>
-                <p>Education Start Date: {props.educationStartDate}</p>
-                <p>Education End Date: {props.educationEndDate}</p>
+                <p><strong>School:</strong> {props.school}</p>
+                <p><strong>Title of Study:</strong> {props.titleOfStudy}</p>
+                <p><strong>Education Start Date:</strong> {props.educationStartDate}</p>
+                <p><strong>Education End Date:</strong> {props.educationEndDate}</p>
             </div>
-            <div>
+            <div className="cv-info">
                 <h2>Experience Information</h2>
-                <p>Company Name: {props.companyName}</p>
-                <p>Position Title: {props.positionTitle}</p>
-                <p>Responsibilities: {props.responsibilities}</p>
-                <p>Experience Start Date: {props.experienceStartDate}</p>
-                <p>Experience End Date: {props.experienceEndDate}</p>
+                <p><strong>Company Name:</strong> {props.companyName}</p>
+                <p><strong>Position Title:</strong> {props.positionTitle}</p>
+                <p><strong>Responsibilities:</strong> {props.responsibilities}</p>
+                <p><strong>Experience Start Date:</strong> {props.experienceStartDate}</p>
+                <p><strong>Experience End Date:</strong> {props.experienceEndDate}</p>
             </div>
         </>
     );
